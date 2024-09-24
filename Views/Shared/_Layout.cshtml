@@ -3,44 +3,97 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - portfolio</title>
+    <title>@ViewData["Title"] - Port</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/portfolio.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Port.styles.css" asp-append-version="true" />
+    <style>
+        /* Reset margins and paddings to remove any default spacing */
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Ensure no extra space in the header */
+        header {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Make sure the navbar has no background or a background matching the page */
+        .navbar {
+            background-color: transparent; /* or use bg-dark if you want a black background */
+            border: none; /* Remove any border that might cause lines */
+        }
+
+        /* Remove the shadow */
+        .box-shadow {
+            box-shadow: none; /* This removes the default box shadow */
+        }
+
+        /* Center the footer text and remove the border */
+        footer {
+            text-align: center;
+            border-top: none; /* Removes the line above the footer */
+            padding: 10px 0; /* Adds some space to the top and bottom */
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .contact-info a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff; /* Bootstrap link color */
+            font-size: 1.5em; /* Size of icons */
+        }
+
+        .contact-info img {
+            width: 40px; /* Size of the icon images */
+            height: auto;
+            vertical-align: middle; /* Align icons with text */
+        }
+    </style>
 </head>
 <body>
+    <!-- Header section with navigation links removed -->
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- "Port," "Home," and "Privacy" links have been removed -->
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <!-- Footer section with contact info -->
+    <footer class="footer text-muted">
         <div class="container">
-            &copy; 2024 - portfolio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="contact-info">
+                <a href="mailto:your-email@example.com">
+                    <img src="https://raw.githubusercontent.com/Gowri-Mohan/Portfolio/ed1d9b57b01954eb6190928db1c7b19bb0a9546d/GitHub-Mark-ea2971cee799.png" alt="Email" />
+                </a>
+                <a href="tel:+1234567890">
+                    <img src="path/to/phone-icon.png" alt="Phone" />
+                </a>
+                <a href="https://github.com/Gowri-Mohan" target="_blank">
+                    <img src="https://raw.githubusercontent.com/Gowri-Mohan/Portfolio/ed1d9b57b01954eb6190928db1c7b19bb0a9546d/GitHub-Mark-ea2971cee799.png" alt="GitHub" />
+                </a>
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                    <img src="path/to/linkedin-icon.png" alt="LinkedIn" />
+                </a>
+            </div>
+            &copy; Copyright 2024 ©️ AjithAbrahamBen
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
