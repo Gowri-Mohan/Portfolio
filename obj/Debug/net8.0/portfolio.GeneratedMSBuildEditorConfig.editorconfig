@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/gowrimohan/Desktop/gowri/portfolio
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/gowrimohan/Desktop/gowri/portfolio/Views/Home/bi0s.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9iaTBzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gowrimohan/Desktop/gowri/portfolio/Views/Home/experion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9leHBlcmlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/gowrimohan/Desktop/gowri/portfolio/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
