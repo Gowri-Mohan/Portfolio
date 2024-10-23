@@ -1,84 +1,67 @@
-
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";  // This assumes you're using a layout file for shared styles
+    Layout = "~/Views/Shared/_Layout.cshtml";  // Assuming you're using a layout file
 }
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>experion Experience</title>
+    <title>Experion Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #cfacac;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d1117;
+            color: #f0f6fc;
             margin: 0;
             padding: 0 20px;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0;
         }
 
         .section {
-            position: relative;
-            padding: 80px 0;
+            margin: 40px 0;
             text-align: center;
-            overflow: hidden;
         }
 
-        /* Large background text */
         .background-text {
-            position: absolute;
-            top: -30px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 8em;
-            color: rgba(255, 255, 255, 0.05);
-            z-index: 1;
-            pointer-events: none;
-            white-space: nowrap;
+            font-size: 2.5em;
+            color: #00ffcc;
+            margin-bottom: 20px;
+            text-align: left;
         }
 
-        /* Content for the page */
         .section-content {
-            position: relative;
-            z-index: 2;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 50px;
-            padding: 20px;
-        }
-
-        .content {
-            background-color: #333;
+            background-color: #1e1e1e;
+            border-radius: 15px;
             padding: 40px;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 800px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
             font-size: 3em;
-            color: #e4f16e;
+            color: #00ffcc;
             margin: 0 0 20px;
+            font-weight: 700;
         }
 
         h2 {
             font-size: 2em;
-            color: #b0f2b4;
+            color: #ff6ec7;
             margin-bottom: 20px;
         }
 
         p {
             font-size: 1.2em;
-            color: #cec4c4;
+            color: #b0bec5;
             line-height: 1.6;
             margin-bottom: 20px;
         }
@@ -88,48 +71,46 @@
             height: auto;
             border-radius: 10px;
             margin-bottom: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 255, 204, 0.5);
         }
 
         a.btn {
             display: inline-block;
             padding: 10px 30px;
             margin: 10px 5px 0 0;
-            border: none;
-            background-color: #333;
-            color: white;
-            cursor: pointer;
-            border-radius: 10px;
+            border: 2px solid #00ffcc;
+            background-color: transparent;
+            color: #00ffcc;
+            border-radius: 20px;
             text-decoration: none;
             font-size: 1em;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         a.btn:hover {
-            background-color: #555;
+            background-color: #00ffcc;
+            color: #0d1117;
             transform: translateY(-3px);
         }
-
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- experion Experience Section -->
+        <!-- Experion Experience Section -->
         <div class="section">
-            <div class="background-text">experion</div>
+            <div class="background-text">EXPERIENCE</div>
             <div class="section-content">
-                <div class="content">
-                    <h1>experion Technologies</h1>
-                    <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/experion.png" alt="Experion Technologies"/>
-                    <h2>Intern</h2>
-                    <p>During my one-month internship at Experion Technologies, Technopark, Trivandrum, I gained valuable hands-on experience in .NET development. I utilized this knowledge to build a sample web application with PostgreSQL as the database backend, where user authentication was implemented using JWT tokens. The application allowed users to perform basic CRUD operations on a user table displayed on the index page.
+                <h1>Experion Technologies</h1>
+                <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/experion.png" alt="Experion Technologies"/>
+                <h2>Intern</h2>
+                <p>During my one-month internship at Experion Technologies, Technopark, Trivandrum, I gained valuable hands-on experience in .NET development. I utilized this knowledge to build a sample web application with PostgreSQL as the database backend, where user authentication was implemented using JWT tokens. The application allowed users to perform basic CRUD operations on a user table displayed on the index page.</p>
 
-In addition to technical skills, I also developed key professional and interpersonal skills. I improved my communication, time management, and teamwork abilities by collaborating with colleagues and adhering to professional etiquette. This experience helped me refine my problem-solving and adaptability skills, both essential for working in a dynamic, fast-paced environment.</p>
+                <p>In addition to technical skills, I also developed key professional and interpersonal skills. I improved my communication, time management, and teamwork abilities by collaborating with colleagues and adhering to professional etiquette. This experience helped me refine my problem-solving and adaptability skills, both essential for working in a dynamic, fast-paced environment.</p>
                     
-                    <a href="@Url.Action("Index", "Home")" class="btn">Go Back</a>
-                </div>
+                <a href="@Url.Action("Index", "Home")" class="btn">Go Back</a>
             </div>
         </div>
     </div>
 </body>
 </html>
+

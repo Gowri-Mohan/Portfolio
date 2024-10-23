@@ -33,6 +33,16 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult CarnaticMusic()
+    {
+        return View();
+    }
+
+    public IActionResult ClassicalDance()
+    {
+        return View();
+    }
+
     public IActionResult webapp()
     {
         return View();
