@@ -26,8 +26,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9jYXJuYXRpY211c2ljLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gowrimohan/Desktop/gowri/portfolio/Views/Home/dance.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9kYW5jZS5jc2h0bWw=
+[/Users/gowrimohan/Desktop/gowri/portfolio/Views/Home/ClassicalDance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DbGFzc2ljYWxEYW5jZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/gowrimohan/Desktop/gowri/portfolio/Views/Home/experion.cshtml]
@@ -36,6 +36,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/gowrimohan/Desktop/gowri/portfolio/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gowrimohan/Desktop/gowri/portfolio/Views/Home/jrc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9qcmMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/gowrimohan/Desktop/gowri/portfolio/Views/Home/scribe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9zY3JpYmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/gowrimohan/Desktop/gowri/portfolio/Views/Home/webapp.cshtml]

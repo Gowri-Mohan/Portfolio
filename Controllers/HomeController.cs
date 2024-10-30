@@ -43,6 +43,15 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult JRC()
+    {
+        return View();
+    }
+
+    public IActionResult Scribe()
+    {
+        return View();
+    }
     public IActionResult webapp()
     {
         return View();
