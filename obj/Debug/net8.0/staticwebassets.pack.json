@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets/portfolio.bundle.scp.css"
     },
     {
+      "Id": "/Users/gowrimohan/Desktop/gowri/portfolio/wwwroot/css/dark.css",
+      "PackagePath": "staticwebassets/css/dark.css"
+    },
+    {
+      "Id": "/Users/gowrimohan/Desktop/gowri/portfolio/wwwroot/css/light.css",
+      "PackagePath": "staticwebassets/css/light.css"
+    },
+    {
       "Id": "/Users/gowrimohan/Desktop/gowri/portfolio/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

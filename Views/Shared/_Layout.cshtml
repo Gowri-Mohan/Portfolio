@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Port</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link id="theme-stylesheet" rel="stylesheet" href="~/css/light.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Port.styles.css" asp-append-version="true" />
     <style>
@@ -55,6 +56,17 @@
             height: auto;
             vertical-align: middle; /* Align icons with text */
         }
+
+        /* Theme Toggle Button */
+        #theme-toggle {
+            cursor: pointer;
+            font-size: 16px;
+            padding: 5px 10px;
+            background-color: transparent;
+            border: 1px solid #007bff;
+            color: #007bff;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -62,7 +74,8 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
             <div class="container-fluid">
-                <!-- "Port," "Home," and "Privacy" links have been removed -->
+                <!-- Add Theme Toggle Button -->
+                <button id="theme-toggle" class="ms-auto">Toggle Theme</button>
             </div>
         </nav>
     </header>
@@ -74,7 +87,6 @@
     </div>
 
     <!-- Footer section with contact info -->
-   
     <footer id="contact" class="footer text-muted"> <!-- Added id "contact" -->
         <div class="container">
             <div class="contact-info">
@@ -95,10 +107,30 @@
         </div>
     </footer>
 
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        // Theme toggle script
+        $(document).ready(function () {
+            const theme = localStorage.getItem('theme') || 'light';
+            setTheme(theme);
+
+            $('#theme-toggle').click(function (event) {
+                event.preventDefault(); 
+                const currentTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+                setTheme(currentTheme);
+            });
+
+            function setTheme(theme) {
+                localStorage.setItem('theme', theme);
+                const stylesheet = theme === 'dark' ? '@Url.Content("~/css/dark.css")' : '@Url.Content("~/css/light.css")';
+                $('#theme-stylesheet').attr('href', stylesheet);
+            }
+
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
