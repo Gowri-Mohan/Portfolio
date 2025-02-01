@@ -57,28 +57,10 @@
             vertical-align: middle; /* Align icons with text */
         }
 
-        /* Theme Toggle Button */
-        #theme-toggle {
-            cursor: pointer;
-            font-size: 16px;
-            padding: 5px 10px;
-            background-color: transparent;
-            border: 1px solid #007bff;
-            color: #007bff;
-            border-radius: 5px;
-        }
     </style>
 </head>
 <body>
-    <!-- Header section with navigation links removed -->
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
-            <div class="container-fluid">
-                <!-- Add Theme Toggle Button -->
-                <button id="theme-toggle" class="ms-auto">Toggle Theme</button>
-            </div>
-        </nav>
-    </header>
+    
 
     <div class="container">
         <main role="main" class="pb-3">
@@ -110,26 +92,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script>
-        // Theme toggle script
-        $(document).ready(function () {
-            const theme = localStorage.getItem('theme') || 'light';
-            setTheme(theme);
-
-            $('#theme-toggle').click(function (event) {
-                event.preventDefault(); 
-                const currentTheme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
-                setTheme(currentTheme);
-            });
-
-            function setTheme(theme) {
-                localStorage.setItem('theme', theme);
-                const stylesheet = theme === 'dark' ? '@Url.Content("~/css/dark.css")' : '@Url.Content("~/css/light.css")';
-                $('#theme-stylesheet').attr('href', stylesheet);
-            }
-
-        });
-    </script>
+    
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
