@@ -8,12 +8,23 @@
     <link id="theme-stylesheet" rel="stylesheet" href="~/css/light.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Port.styles.css" asp-append-version="true" />
+
+    <header>
+        <div class="container"> 
+            <label class="switch" for="theme-toggle">  
+                <input type="checkbox" id="theme-toggle" />
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+
     <style>
         /* Reset margins and paddings to remove any default spacing */
         html, body {
             margin: 0;
             padding: 0;
         }
+
 
         /* Ensure no extra space in the header */
         header {
@@ -67,6 +78,8 @@
             @RenderBody()
         </main>
     </div>
+
+    
 
     <!-- Footer section with contact info -->
     <footer id="contact" class="footer text-muted"> <!-- Added id "contact" -->

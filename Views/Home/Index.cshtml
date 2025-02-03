@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    @*
     <style>
-        body {
+        bodyy {
             font-family: 'Poppins', sans-serif;
             background-color: #0d1117;
             color: #f0f6fc;
@@ -14,14 +15,14 @@
             padding: 0 20px;
         }
 
-        .container {
+        .containerr {
             max-width: 1100px;
             margin: 0 auto;
             padding: 0;
         }
 
         /* Intro Section */
-        .intro {
+        .introo {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -29,12 +30,12 @@
             padding: 40px 0;
         }
 
-        .intro .text {
+        .introo .textt {
             flex-grow: 1;
             padding-right: 30px;
         }
 
-        .intro img {
+        .introo imgg {
             width: 400px;
             height: auto;
             border-radius: 20px;
@@ -42,7 +43,7 @@
             filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.1));
         }
 
-        h1 {
+        h11 {
             font-size: 4em;
             color: #00ffcc;
             margin: 0;
@@ -50,13 +51,13 @@
             line-height: 1.2;
         }
 
-        .name-highlight {
+        .name-highlightt {
             color: #ff6ec7;
             font-size: 1.25em;
             font-weight: 500;
         }
 
-        p {
+        pp {
             font-size: 1.2em;
             color: #b0bec5;
             margin: 10px 0 20px 0;
@@ -64,7 +65,7 @@
             line-height: 1.5;
         }
 
-        .btn {
+        .btnn {
             display: inline-block;
             padding: 10px 30px;
             margin: 10px 10px 0 0;
@@ -78,31 +79,31 @@
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
-        .btn:hover {
+        .btn:hoverr {
             background-color: #00ffcc;
             color: #0d1117;
             transform: translateY(-3px);
         }
 
         /* Section Styles */
-        .section {
+        .sectionn {
             margin: 40px 0;
         }
 
-        .background-text {
+        .background-textt {
             font-size: 2.5em;
             color: #00ffcc;
             margin-bottom: 20px;
             text-align: left;
         }
 
-        .section-content {
+        .section-contentt {
             display: flex;
             flex-wrap: wrap;
             gap: 20px; /* Spacing between cards */
         }
 
-        .card {
+        .cardd {
             background-color: #1e1e1e;
             border-radius: 15px;
             padding: 20px;
@@ -114,23 +115,24 @@
             transition: transform 0.3s;
         }
 
-        .card:hover {
+        .card:hoverr {
             transform: translateY(-5px);
         }
 
-        .experience-img {
+        .experience-imgg {
             width: 100px;
             height: auto;
             margin-bottom: 10px;
         }
     </style>
+    *@
 </head>
-<body>
-    <div class="container">
+<bodyy>
+    <div class="containerr">
         <!-- Introduction Section -->
-        <div class="intro">
-            <div class="text">
-                <h1>Hi, I'm<br><span class="name-highlight">Gowri Mohan</span></h1>
+        <div class="introo">
+            <div class="textt">
+                <h11>Hi, I'm<br><span class="name-highlightt">Gowri Mohan</span></h11>
                 <p>3rd year EAC student at Amrita Vishwa Vidyapeetham.</p> 
                 <p>Striving for Excellence, One Step at a Time.</p>
                 <div>
@@ -144,26 +146,26 @@
         </div>
 
         <!-- Education Section -->
-        <div class="section">
-            <div class="background-text">EDUCATION</div>
-            <div class="section-content">
-                <div class="card">
+        <div class="sectionn">
+            <div class="background-textt">EDUCATION</div>
+            <div class="section-contentt">
+                <div class="cardd">
                     <h3>Amrita Vishwa Vidyapeetham</h3>
                     <p>B.Tech Electronics and Communication</p>
                     <p>7.3 CGPA</p>
                     <p>Oct 2022 – Apr 2026</p>
                 </div>
 
-                <div class="card">
+                <div class="cardd">
                     <h3>The School of The Good Shepherd</h3>
-                    <p>Higher Secondary - CBSE</p>
+                    <p>Higher Secondary - CBSE<p>
                     <p>XI & XII – Science</p>
                     <p>Jun 2020 – Apr 2022</p>
                 </div>
 
-                <div class="card">
+                <div class="cardd">
                     <h3>Sri Sri Ravishankar Vidya Mandir</h3>
-                    <p>High School – CBSE</p>
+                    <p>High School - CBSE</p>
                     <p>IX & X</p>
                     <p>Jun 2018 – Mar 2020</p>
                 </div>
@@ -171,19 +173,19 @@
         </div>
 
         <!-- Experience Section -->
-        <div class="section">
-            <div class="background-text">EXPERIENCE</div>
-            <div class="section-content">
+        <div class="sectionn">
+            <div class="background-textt">EXPERIENCE</div>
+            <div class="section-contentt">
                 <a href="@Url.Action("Experion", "Home")" class="card-link">
-                    <div class="card">
-                        <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/experion.png" alt="Experion Technologies" class="experience-img">
+                    <div class="cardd">
+                        <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/experion.png" alt="Experion Technologies" class="experience-imgg">
                         <h3>Experion Technologies</h3>
                         <p>Intern</p>
                     </div>
                 </a>
                 <a href="@Url.Action("bi0s", "Home")" class="card-link">
-                    <div class="card">
-                        <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/bi0s.png" alt="bi0s Hardware" class="experience-img">
+                    <div class="cardd">
+                        <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/bi0s.png" alt="bi0s Hardware" class="experience-imgg">
                         <h3>bi0s Hardware</h3>
                         <p>Trainee in OT Forensics</p>
                     </div>
@@ -192,19 +194,19 @@
         </div>
 
         <!-- Projects Section -->
-        <div class="section">
-            <div class="background-text">PROJECTS</div>
-            <div class="section-content">
+        <div class="sectionn">
+            <div class="background-textt">PROJECTS</div>
+            <div class="section-contentt">
                 <a href="@Url.Action("webapp", "Home")" class="card-link">
-                    <div class="card">
-                        <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/experion.png" alt="Webapp" class="experience-img">
+                    <div class="cardd">
+                        <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/experion.png" alt="Webapp" class="experience-imgg">
                         <h3>Webapp</h3>
                         <p>Simple webapp</p>
                     </div>
                 </a>
                 <a href="@Url.Action("portfolio", "Home")" class="card-link">
-                    <div class="card">
-                        <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/experion.png" alt="Webapp" class="experience-img">
+                    <div class="cardd">
+                        <img src="https://github.com/Gowri-Mohan/Portfolio/raw/8ac49b4bb8c95e539e39bbf74bd37df5f67b8b92/experion.png" alt="Webapp" class="experience-imgg">
                         <h3>Portfolio</h3>
                         <p>Personal Portfolio Website</p>
                     </div>
@@ -213,31 +215,31 @@
         </div>
 
         <!-- Extra-Curriculars Section -->
-        <div class="section">
-            <div class="background-text" style="font-size: 2.5em;">EXTRA CURRICULARS</div>
-            <div class="section-content">
+        <div class="sectionn">
+            <div class="background-textt" style="font-size: 2.5em;">EXTRA CURRICULARS</div>
+            <div class="section-contentt">
                 <a href="@Url.Action("CarnaticMusic", "Home")" class="card-link">
-                    <div class="card">
+                    <div class="cardd">
                         <h3>Carnatic Music</h3>
                     </div>
                 </a>
                 <a href="@Url.Action("ClassicalDance", "Home")" class="card-link">
-                    <div class="card">
+                    <div class="cardd">
                         <h3>Classical Dance</h3>
                     </div>
                 </a>
                 <a href="@Url.Action("JRC", "Home")" class="card-link">
-                    <div class="card">
+                    <div class="cardd">
                         <h3>Junior Red Cross</h3>
                     </div>
                 </a>
                 <a href="@Url.Action("Scribe", "Home")" class="card-link">
-                    <div class="card">
+                    <div class="cardd">
                         <h3>Scribe</h3>
                     </div>
                 </a>
                 </div>
             </div>
         </div>
-    </body>
+    </bodyy>
 </html>

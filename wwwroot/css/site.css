@@ -28,3 +28,281 @@ a.card-link {
 html {
   scroll-behavior: smooth;
 }
+
+bodyy {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0 20px;
+}
+
+.containerr {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.introo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 40px 0;
+}
+
+.introo .textt {
+  flex-grow: 1;
+  padding-right: 30px;
+}
+
+.introo img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.1));
+}
+
+h11 {
+  font-size: 4em;
+  color: var(--primary-color);
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.name-highlightt {
+  color: var(--secondary-color);
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.2em;
+  color: var(--secondary-text-color);
+  margin: 10px 0 20px 0;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.btnn {
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 10px 0 0;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1em;
+  box-shadow: 0px 5px 15px rgba(0, 255, 204, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  transform: translateY(-3px);
+}
+
+
+.sectionn {
+  margin: 40px 0;
+}
+
+.background-textt {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.section-contentt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.cardd {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1 1 calc(30% - 20px); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hoverr {
+  transform: translateY(-5px);
+}
+
+.experience-imgg {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.background-text {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 3em;
+  color: var(--primary-color);
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: var(--secondary-text-color);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 255, 204, 0.5);
+}
+
+a.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 5px 0 0;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  transform: translateY(-3px);
+}
+
+
+/* 2. CSS Variables */:root {
+  --primary-color: #00ffcc;
+  --secondary-color: #ff6ec7;
+  --text-color: #f0f6fc;
+  --bg-color: #0d1117;
+  --font-family: 'Poppins', sans-serif;
+  --container-width: 1100px;
+  --card-bg: #1e1e1e;
+  --secondary-text-color: #b0bec5;
+}
+
+body.light-theme {
+  --primary-color: #007bff;
+  --secondary-color: #d63384;
+  --text-color: #212529;
+  --bg-color: #ffffff;
+  --card-bg: #f8f9fa;
+  --secondary-text-color: #6c757d;
+}
+
+/* The switch - the box around the slider */.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition:.4s;
+  transition:.4s;
+}.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition:.4s;
+  transition:.4s;
+}
+
+input:checked +.slider {
+  background-color: #2196F3; /* Or your preferred color */
+}
+
+input:focus +.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked +.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */.slider.round {
+  border-radius: 34px;
+}.slider.round:before {
+  border-radius: 50%;
+}
