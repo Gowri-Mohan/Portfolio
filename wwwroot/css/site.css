@@ -97,7 +97,7 @@ p {
   border-radius: 20px;
   text-decoration: none;
   font-size: 1em;
-  box-shadow: 0px 5px 15px rgba(0, 255, 204, 0.5);
+  box-shadow: var(--box-shadow);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -241,68 +241,35 @@ a.btn:hover {
   --container-width: 1100px;
   --card-bg: #1e1e1e;
   --secondary-text-color: #b0bec5;
+  --box-shadow: 0px 5px 15px rgba(0, 255, 204, 0.5);
 }
 
 body.light-theme {
-  --primary-color: #007bff;
-  --secondary-color: #d63384;
-  --text-color: #212529;
-  --bg-color: #ffffff;
-  --card-bg: #f8f9fa;
-  --secondary-text-color: #6c757d;
+  --primary-color: #ffbe0b; /* Bright Yellow */
+  --secondary-color: #fb5607; /* Vivid Orange */
+  --text-color: #05394a; /* Dark Teal */
+  --bg-color: #ffffff; /* White */
+  --card-bg: #fffcf2; /* Soft Warm Cream */
+  --secondary-text-color: #118ab2; /* Medium Teal */
+  --box-shadow: #118ab3;
 }
 
-/* The switch - the box around the slider */.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
 
-/* Hide default HTML checkbox */.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
 
-/* The slider */.slider {
-  position: absolute;
+
+#theme-toggle {
+  background-color: rgba(0, 0, 0, 0.1); /* Very light gray background */
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition:.4s;
-  transition:.4s;
-}.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition:.4s;
-  transition:.4s;
+  border-radius: 5px;
+  margin-top: 40px; /* Add margin from the top */
+  color: #666;      /* Subtle gray text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transitions */
 }
 
-input:checked +.slider {
-  background-color: #2196F3; /* Or your preferred color */
-}
-
-input:focus +.slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked +.slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */.slider.round {
-  border-radius: 34px;
-}.slider.round:before {
-  border-radius: 50%;
+#theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Slightly darker on hover */
+  color: #333; /* Slightly darker text on hover */
 }
